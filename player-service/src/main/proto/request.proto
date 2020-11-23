@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package player.service;
+
+message CreatePlayerRequest {
+    string firstName = 2;
+    string secondName = 3;
+    string middleName = 4;
+    string login = 5;
+    message CreateContacts {
+        string email = 1;
+        string mobilePhoneNumber = 2;
+        string country = 3;
+        string city = 4;
+        string street = 5;
+        string house = 6;
+        string roomNumber = 7;
+        string index = 8;
+    }
+    CreateContacts contacts = 6;
+}

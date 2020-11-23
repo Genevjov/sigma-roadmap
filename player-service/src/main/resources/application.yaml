@@ -1,0 +1,9 @@
+server:
+  servlet:
+    contextPath: '/player'
+spring:
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/player_service'
+    username: 'playerService'
+    password: 'boll#plank'
+    driver-class-name: org.postgresql.Driver
